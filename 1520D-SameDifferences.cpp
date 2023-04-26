@@ -12,8 +12,12 @@ void solve()
         int x;
         cin >> x;
         x -= i;
+        cout << "x =" << res << endl;
+
         res += a[x];
+        cout << "res =" << res << endl;
         a[x]++;
+        cout << "a[x] =" << a[x] << endl;
     }
     cout << res << endl;
 }
