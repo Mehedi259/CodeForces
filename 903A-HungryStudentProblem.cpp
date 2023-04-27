@@ -3,14 +3,14 @@
 using namespace std;
 void solve()
 {
-    int n;
+    int n, a, b, c;
     scanf("%d", &n);
 
     if (n & 1)
     {
-        int a = n - 3;
-        int b = n - 7;
-        int c = n - 14;
+        a = n - 3;
+        b = n - 7;
+        c = n - 14;
 
         if ((a >= 0 && (a % 3 == 0 || a % 7 == 0)) || (b >= 0 && (b % 3 == 0 || b % 7 == 0)) || (c >= 0 && (c % 3 == 0 || c % 7 == 0)))
             printf("YES\n");
@@ -19,9 +19,9 @@ void solve()
     }
     else
     {
-        int a = n - 6;
-        int b = n - 10;
-        int c = n - 14;
+        a = n - 6;
+        b = n - 10;
+        c = n - 14;
 
         if ((a >= 0 && (a % 3 == 0 || a % 7 == 0)) || (b >= 0 && (b % 3 == 0 || b % 7 == 0)) || (c >= 0 && (c % 3 == 0 || c % 7 == 0)))
             printf("YES\n");
