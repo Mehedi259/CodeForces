@@ -23,38 +23,6 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
-    ll n;
-    cin >> n;
-    map<string, ll> m;
-    REP(i, n)
-    {
-        ll k;
-        string s;
-        cin >> k >> s;
-        if (m[s] == 0)
-            m[s] = k;
-        else
-            m[s] = min(m[s], k);
-    }
-    ll sum = 0, c = 0, d = 1e16;
-    for (auto &a : m)
-    {
-        if (a.first == "00")
-            continue;
-        if (a.first == "11")
-        {
-            d = min(a.second, d);
-            continue;
-        }
-        sum += a.second;
-        c++;
-    }
-    if (d == 1e16 && c < 2)
-        cout << -1 << nl;
-    else if (d < 1e16 && c < 2)
-        cout << d << nl;
-    else
-        cout << min(sum, d) << nl;
 }
 int main()
 {
