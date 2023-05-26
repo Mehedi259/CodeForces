@@ -7,6 +7,7 @@
 using namespace std;
 
 #define nl '\n'
+#define r0 return 0 
 #define pb push_back
 #define all(a) a.begin(), a.end()
 #define REP(x, n) for (int x = 0; x < n; x++)
@@ -33,4 +34,5 @@ int main()
     {
         solve();
     }
+    r0;
 }
