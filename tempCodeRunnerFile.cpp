@@ -1,1 +1,4 @@
-cout << dig << endl;
+    // REP(i, n)
+    // {
+    //     cout << a[i] << endl;
+    // }
