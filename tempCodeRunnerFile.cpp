@@ -1,4 +1,4 @@
-    // REP(i, n)
-    // {
-    //     cout << a[i] << endl;
-    // }
+    // if (a == b)
+    //     cout << "YES" << endl;
+    // else
+    //     cout << "NO" << endl;
