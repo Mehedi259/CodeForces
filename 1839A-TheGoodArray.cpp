@@ -23,9 +23,11 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
-    int n,k;
+    double n,k;
     cin >> n >> k;
-    cout << ((n-1)/k)+1 << nl;
+    // double ans = ceil((n-1)/k);
+    // cout << "ans = " <<  ans << nl;
+    cout << ceil((n-1)/k)+1 << nl;
 }
 int main()
 {

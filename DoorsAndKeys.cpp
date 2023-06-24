@@ -21,27 +21,30 @@ typedef vector<vl> vvl;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
+typedef map<char, int> mci;
 void solve()
 {
     string s;
     cin >> s;
-    cout << toupper(s) << endl;
-    // int cnt1 = 0, cnt2 = 0, cnt3 = 0;
-    // for (int i = 0; i < l; i++)
-    // {
-    //     if (s[i] == 'r')
-    //     {
-    //         cnt1 = 1;
-    //     }
-    //     else if (s[i] == 'g')
-    //     {
-    //         cnt2 = 1;
-    //     }        
-    //     else if (s[i] == 'b')
-    //     {
-    //         cnt3 = 1;
-    //     }
-    // }
+    mci mp;
+    int ans = 0;
+    for(int i=0; i<s.size(); i++)
+    {
+        if(s[i] >= 'a' && s[i] <= 'z') mp[s[i]] = 1;
+        else
+        {
+            char z = s[i] + 32;
+            // cout << "z = " <<  z << endl;
+            if (mp[z] == 0)
+            {
+                ans = 1;
+                break;
+            }
+
+        }
+    }
+    if(ans == 0) cout << "YES" << nl;
+    else cout << "NO" << nl;
 }
 int main()
 {
