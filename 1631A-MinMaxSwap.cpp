@@ -6,7 +6,7 @@
 using namespace std;
 
 #define nl '\n'
-#define r0 return 0 
+#define r0 return 0
 #define pb push_back
 #define all(a) a.begin(), a.end()
 #define REP(i, n) for (int i = 0; i < n; i++)
@@ -23,6 +23,31 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
+    ll n, mx = 0, mx2 = 0;
+    cin >> n;
+    vl a(n), b(n);
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+    }
+    for (int i = 0; i < n; i++)
+    {
+        cin >> b[i];
+    }
+    for (int i = 0; i < n; i++)
+    {
+        if (b[i] > a[i])
+        {
+            mx = max(mx, b[i]);
+            mx2 = max(mx2, a[i]);
+        }
+        else
+        {
+            mx = max(mx, a[i]);
+            mx2 = max(mx2, b[i]);
+        }
+    }
+    cout << mx * mx2 << endl;
 }
 int main()
 {
