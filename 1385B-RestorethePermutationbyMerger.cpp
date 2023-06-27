@@ -25,6 +25,21 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
+    int n;
+    cin >> n;
+    si ss;
+    vi a(2*n);
+    for (auto value : a)
+    {
+        cin >> a;
+        ss.insert(a);
+    }
+    set<int> :: iterator it;
+    for(auto value : a)
+    {
+        cout << *it << endl;
+    }
+
 }
 int main()
 {
