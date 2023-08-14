@@ -3,7 +3,6 @@
 // Mehedi Hasan Mridul
 
 #include <bits/stdc++.h>
-#define mem(array, num) memset(array, num, sizeof(array))
 using namespace std;
 
 #define nl '\n'
@@ -26,40 +25,32 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
-    ll n, i;
-    while (cin >> n)
+    int n;
+    cin >> n;
+    int ans = 0, ans1;
+    for (int i = 1; i <= n; i++)
     {
-        ll a[n + 2];
-        for (i = 1; i <= n; i++)
-            cin >> a[i];
-        ll left = 1, right = n, sum1 = 0, sum2 = 0;
-        i = 1;
-        while (left <= right)
+        int a, q;
+        cin >> a >> q;
+        if (a <= 10)
         {
-            if (i % 2 == 1)
+            if(q > ans)
             {
-                if (a[left] >= a[right])
-                    sum1 += a[left++];
-                else
-                    sum1 += a[right--];
+                ans = q;
+                ans1 = i;
             }
-            else
-            {
-                if (a[left] >= a[right])
-                    sum2 += a[left++];
-                else
-                    sum2 += a[right--];
-            }
-            i++;
         }
-        cout << sum1 << " " << sum2 << endl;
     }
+    cout << ans1 << endl;
 }
 int main()
 {
     Mehedi_hasan();
-
-    solve();
-
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     r0;
 }

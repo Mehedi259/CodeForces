@@ -3,7 +3,6 @@
 // Mehedi Hasan Mridul
 
 #include <bits/stdc++.h>
-#define mem(array, num) memset(array, num, sizeof(array))
 using namespace std;
 
 #define nl '\n'
@@ -26,40 +25,53 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
-    ll n, i;
-    while (cin >> n)
-    {
-        ll a[n + 2];
-        for (i = 1; i <= n; i++)
-            cin >> a[i];
-        ll left = 1, right = n, sum1 = 0, sum2 = 0;
-        i = 1;
-        while (left <= right)
+    int n, k, x;
+    cin >> n >> k >> x;
+    bool found = false;
+    if (x == 1)
+    {   
+        for (int i = 2; i <=k ; i++)
         {
-            if (i % 2 == 1)
+            if(n%i == 0)
             {
-                if (a[left] >= a[right])
-                    sum1 += a[left++];
-                else
-                    sum1 += a[right--];
+                found = true;
+                break;
             }
-            else
-            {
-                if (a[left] >= a[right])
-                    sum2 += a[left++];
-                else
-                    sum2 += a[right--];
-            }
-            i++;
         }
-        cout << sum1 << " " << sum2 << endl;
+        
+        if (found == true && k != 1)
+        {
+            cout << "YES" << endl << n/k << endl;
+            for (int i = 0; i < n/k; i++)
+            {
+                cout << k << " ";
+            }
+            cout << nl;
+        }
+        else
+        {
+            cout << "NO" << endl;
+        }
+    }
+    else
+    {
+        cout << "YES" << endl
+             << n << endl;
+        for (int i = 0; i < n; i++)
+        {
+            cout << 1 << " ";
+        }
+        cout << nl;
     }
 }
 int main()
 {
     Mehedi_hasan();
-
-    solve();
-
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     r0;
 }
