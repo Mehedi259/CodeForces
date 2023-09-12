@@ -1,22 +1,34 @@
-#include <iostream>
+//In the name of Allah, the Gracious, the Merciful
+
+#include <bits/stdc++.h>
 using namespace std;
-int f[2020];
-int main()
-{
-    int i, j, k, n, ans;
-    cin >> n;
-    for (i = 1; i <= n; i++)
-        cin >> f[i];
-    ans = 0;
-    for (i = 1; i <= n; i++)
-    {
-        j = f[i], k = 0;
-        while (j != -1)
-            j = f[j], k++;
-        // cout<<i<<" "<<k<<endl;
-        ans = max(ans, k);
+
+ 
+int main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL);
+ 
+    int n, d;
+    cin >> n >> d;
+    vector<int> p(n);
+    for(int i=0; i<n;i++) cin >> p[i];
+    sort(p.begin(), p.end());
+    int l = 0, r = n - 1;
+    int ans = 0;
+    while (r >= l) {
+        long long cur = p[r];
+        while (l < r && cur <= d) {
+            cur += p[r];
+            ++l;
+        }
+        if (cur > d) {
+            ++ans;
+        }
+        --r;
     }
-    cout << ++ans << endl;
-    // system("pause");
+    cout << ans << '\n';
+ 
     return 0;
 }
+
+
+
