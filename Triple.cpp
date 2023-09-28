@@ -6,7 +6,7 @@
 using namespace std;
 
 #define nl '\n'
-#define r0 return 0 
+#define r0 return 0
 #define pb push_back
 #define all(a) a.begin(), a.end()
 #define REP(i, n) for (int i = 0; i < n; i++)
@@ -25,6 +25,30 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
+    int cnt = 0;
+    ll n;
+    cin >> n;
+    vl v(n);
+    for (int i = 0; i < n; i++)
+    {
+        cin >> v[i];
+    }
+    sort(all(v));
+    for (int i = 0; i < n; i++)
+    {
+        // int x = v[i];
+        if (v[i] == v[i + 1])
+        {
+            cnt++;
+            if (cnt == 2)
+            {
+                cout << v[i] << "\n";
+                return;
+            }
+        }
+        else cnt = 0;
+    }
+    cout << -1 << "\n";
 }
 int32_t main()
 {

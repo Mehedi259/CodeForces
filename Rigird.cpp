@@ -21,10 +21,27 @@ typedef vector<vi> vvi;
 typedef vector<ll> vl;
 typedef vector<vl> vvl;
 typedef pair<int, int> pii;
+typedef vector<pair<int, int>> pii_pair;
 typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
+    int n;
+    cin >> n;
+    pii_pair p(n);
+    for(int i = 0; i < n; i++)
+    {
+        cin >> p[i].first >> p[i].second;
+    }
+    for(int i = 1; i < n; i++)
+    {
+        if(p[i].first >= p[0].first && p[i].second >= p[0].second)
+        {
+            cout << -1 << endl;
+            return;
+        }
+    }
+    cout << p[0].first << endl;
 }
 int32_t main()
 {

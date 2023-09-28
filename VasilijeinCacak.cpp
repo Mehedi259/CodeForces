@@ -25,6 +25,12 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
+    ll n,k,x;
+    cin >> n >> k >> x;
+    ll a = (k*(k+1))/2;
+    ll b = ((2*n-k+1)*k)/2;
+    if(x<a || x>b){cout << "NO\n";return;}
+    cout << "YES\n";
 }
 int32_t main()
 {
