@@ -1,0 +1,1 @@
+{"name":"Local: PermutationAndPrime","url":"c:\\CodeForces\\PermutationAndPrime.cpp","tests":[{"id":1699154221960,"input":"3\n2\n1\n5","output":"2 1\n1\n5 2 1 4 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\PermutationAndPrime.cpp","group":"local","local":true}
