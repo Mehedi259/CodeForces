@@ -1,45 +1,54 @@
-#include <stdio.h>
-#include <iostream>
-#include <algorithm>
-#include <string.h>
-#include <string>
-#include <queue>
-#include <set>
-#include <map>
-#include <utility>
-#include <math.h>
-using namespace std;
-#define fio ios::sync_with_stdio(0), cin.tie(0);
-typedef long long ll;
-typedef long double ld;
+#include <bits/stdc++.h>
 
-char inp[505][505];
-int R, C;
-int main()
+using namespace std;
+
+const int MAX = 200007;
+const int MOD = 1000000007;
+
+void solve()
 {
-    scanf("%d %d", &R, &C);
-    for (int i = 1; i <= R; i++)
+    char g[8][8];
+    vector<int> r;
+    for (int i = 0; i < 8; i++)
     {
-        scanf("%s", inp[i] + 1);
-    }
-    for (int i = 1; i <= R; i++)
-    {
-        for (int j = 1; j <= C; j++)
+        for (int j = 0; j < 8; j++)
         {
-            if (inp[i][j] == 'W')
+            cin >> g[i][j];
+            if (g[i][j] == 'R')
             {
-                if (inp[i - 1][j] == 'S' || inp[i][j + 1] == 'S' || inp[i + 1][j] == 'S' || inp[i][j - 1] == 'S')
-                    return !printf("No");
+                r.push_back(i);
             }
         }
     }
-    for (int i = 1; i <= R; i++)
-        for (int j = 1; j <= C; j++)
+    for (int i : r)
+    {
+        bool ok = true;
+        for (int j = 0; j < 8; j++)
         {
-            if (inp[i][j] == '.')
-                inp[i][j] = 'D';
+            if (g[i][j] != 'R')
+            {
+                ok = false;
+                break;
+            }
         }
-    printf("Yes\n");
-    for (int i = 1; i <= R; i++)
-        printf("%s\n", inp[i] + 1);
+        if (ok)
+        {
+            cout << "R\n";
+            return;
+        }
+    }
+    cout << "B\n";
+}
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int tt;
+    cin >> tt;
+    for (int i = 1; i <= tt; i++)
+    {
+        solve();
+    }
+    // solve();
 }
