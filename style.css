@@ -1,0 +1,13 @@
+body {
+    background-color: red;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: Arial;
+    font-size: 60px;
+  }

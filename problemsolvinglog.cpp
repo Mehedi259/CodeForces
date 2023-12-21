@@ -15,6 +15,7 @@ int main()
         for (int i = 0; i < n; i++)
         {
             arr[s[i] - '0' - 16]++;
+            cout << s[i] - '' - 16 << endl;
         }
         for (int i = 1; i <= 26; i++)
         {
