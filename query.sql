@@ -26,3 +26,18 @@ create table employee (
 
     select * from employee
     where ename like "%n" or "j%";
+CREATE PROCEDURE GetCustomerInfo(IN CustomerAge INT)
+ BEGIN
+ SELECT * FROM CUSTOMERS WHERE AGE = CustomerAge;
+ END
+ CALL GetCustomerInfo(25);
+ CREATE PROCEDURE GetEmployeeInfo
+    @EmployeeID INT,
+    @DepartmentID INT
+AS
+BEGIN
+    SELECT * 
+    FROM Employee
+    WHERE EmployeeID = @EmployeeID
+        AND DepartmentID = @DepartmentID;
+END;
