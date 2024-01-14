@@ -1,0 +1,1 @@
+{"name":"Local: BanBan","url":"c:\\CodeForces\\BanBan.cpp","tests":[{"id":1705213503874,"input":"2\n1\n2","output":"1\n1 2\n1\n2 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\BanBan.cpp","group":"local","local":true}
