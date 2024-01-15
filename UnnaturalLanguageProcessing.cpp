@@ -25,6 +25,29 @@ typedef pair<ll, ll> pll;
 typedef map<int, int> mii;
 void solve()
 {
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
+    string res = {""};
+    // cout << !s.empty() << endl;
+    while (!s.empty())
+    {
+        int x;
+        if (s.back() == 'a' || s.back() == 'e')
+            x = 2;
+        else
+            x = 3;
+        while (x--)
+        {
+            res += s.back();
+            s.pop_back();
+        }
+        res += '.';
+    }
+    res.pop_back();
+    reverse(res.begin(),res.end());
+    cout << res << endl;
 }
 int32_t main()
 {
