@@ -6,11 +6,8 @@
 using namespace std;
 #define int long long
 #define endl '\n'
-#define r0 return 0
 #define pb push_back
 #define all(a) a.begin(), a.end()
-#define REP(i, n) for (int i = 0; i < n; i++)
-#define REV(i, n) for (int i = n - 1; i >= 0; i--)
 #define Mehedi_hasan() ios_base::sync_with_stdio(false), cin.tie(NULL)
 
 typedef long long ll;
@@ -27,17 +24,24 @@ void solve()
 {
     int n;
     cin >> n;
-    string a,b,c;
-    cin >> a >> b >> c;
-    bool f = 0;
-    for(int i=0; i<n; i++)
+    for (int i = 1; i <= 26; i++)
     {
-        if(a[i] != c[i] && b[i] != c[i] && a[i] != c[i])
-        f = 1;
-        
+        for (int j = 1; j <= 26; j++)
+        {
+            for (int k = 1; k <= 26; k++)
+            {
+                if (i + j + k == n)
+                {
+                    string s;
+                    s.pb(i + 'a' - 1);
+                    s.pb(j + 'a' - 1);
+                    s.pb(k + 'a' - 1);
+                    cout << s << endl;
+                    return;
+                }
+            }
+        }
     }
-    cout << (f ? "YES" : "NO") << endl;
-
 }
 int32_t main()
 {
@@ -48,5 +52,5 @@ int32_t main()
     {
         solve();
     }
-    r0;
+    return 0;
 }
