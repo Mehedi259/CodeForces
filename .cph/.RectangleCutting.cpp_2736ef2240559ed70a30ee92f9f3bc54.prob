@@ -1,0 +1,1 @@
+{"name":"Local: RectangleCutting","url":"c:\\CodeForces\\RectangleCutting.cpp","tests":[{"id":1708492947664,"input":"7\n1 1\n2 1\n2 6\n3 2\n2 2\n2 4\n6 3","output":"No\nNo\nYes\nYes\nYes\nYes\nNo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\RectangleCutting.cpp","group":"local","local":true}
