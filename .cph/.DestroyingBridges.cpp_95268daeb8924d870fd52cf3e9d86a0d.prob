@@ -1,0 +1,1 @@
+{"name":"Local: DestroyingBridges","url":"c:\\CodeForces\\DestroyingBridges.cpp","tests":[{"id":1710605890126,"input":"6\n2 0\n2 1\n4 1\n5 10\n5 3\n4 4\n","output":"2\n1\n4\n1\n5\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\DestroyingBridges.cpp","group":"local","local":true}
