@@ -1,0 +1,1 @@
+{"name":"Local: Isitstated","url":"c:\\CodeForces\\Isitstated.cpp","tests":[{"id":1711982705895,"input":"10\nis\nit\nstated\nsubmit\nac\naccepted\nwa\nwronganswer\ntle\ntimelimitexceeded","output":"NO\nYES\nNO\nYES\nNO\nNO\nNO\nNO\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\Isitstated.cpp","group":"local","local":true}
