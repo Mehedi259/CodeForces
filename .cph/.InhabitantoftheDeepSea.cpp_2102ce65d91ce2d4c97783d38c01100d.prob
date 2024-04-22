@@ -1,0 +1,1 @@
+{"name":"Local: InhabitantoftheDeepSea","url":"c:\\CodeForces\\InhabitantoftheDeepSea.cpp","tests":[{"id":1713663918004,"input":"6\n4 5\n1 2 4 3\n4 6\n1 2 4 3\n5 20\n2 7 1 8 2\n2 2\n3 2\n2 15\n1 5\n2 7\n5 2","output":"2\n3\n5\n0\n2\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\InhabitantoftheDeepSea.cpp","group":"local","local":true}
