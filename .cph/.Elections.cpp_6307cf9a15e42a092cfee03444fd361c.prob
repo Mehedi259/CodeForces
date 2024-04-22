@@ -1,0 +1,1 @@
+{"name":"Local: Elections","url":"c:\\CodeForces\\Elections.cpp","tests":[{"id":1713788056723,"input":"5\n0 0 0\n10 75 15\n13 13 17\n1000 0 0\n0 1000000000 0\n","output":"1 1 1\n66 0 61\n5 5 0\n0 1001 1001\n1000000001 0 1000000001\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\Elections.cpp","group":"local","local":true}
