@@ -1,0 +1,1 @@
+{"name":"Local: CreatingWords","url":"c:\\CodeForces\\CreatingWords.cpp","tests":[{"id":1719069876437,"input":"6\nbit set\ncat dog\nhot dog\nuwu owo\ncat cat\nzzz zzz\n","output":"sit bet\ndat cog\ndot hog\nowu uwo\ncat cat\nzzz zzz\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\CreatingWords.cpp","group":"local","local":true}
