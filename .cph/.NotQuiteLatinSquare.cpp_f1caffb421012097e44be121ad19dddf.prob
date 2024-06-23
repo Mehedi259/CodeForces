@@ -1,0 +1,1 @@
+{"name":"Local: NotQuiteLatinSquare","url":"c:\\CodeForces\\NotQuiteLatinSquare.cpp","tests":[{"id":1719112562962,"input":"3\nABC\nC?B\nBCA\nBCA\nCA?\nABC\n?AB\nBCA\nABC\n","output":"A\nB\nC\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\NotQuiteLatinSquare.cpp","group":"local","local":true}
