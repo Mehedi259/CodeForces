@@ -1,0 +1,1 @@
+{"name":"Local: PermutationPrinting","url":"c:\\CodeForces\\PermutationPrinting.cpp","tests":[{"id":1719683632860,"input":"2\n4\n3\n","output":"4 1 2 3\n1 2 3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\PermutationPrinting.cpp","group":"local","local":true}
