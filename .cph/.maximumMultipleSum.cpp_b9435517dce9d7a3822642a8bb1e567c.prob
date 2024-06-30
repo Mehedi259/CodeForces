@@ -1,0 +1,1 @@
+{"name":"Local: maximumMultipleSum","url":"c:\\CodeForces\\maximumMultipleSum.cpp","tests":[{"id":1719685420403,"input":"2\n3\n15","output":"3\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\maximumMultipleSum.cpp","group":"local","local":true}
