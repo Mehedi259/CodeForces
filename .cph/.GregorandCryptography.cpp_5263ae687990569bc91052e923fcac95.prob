@@ -1,0 +1,1 @@
+{"name":"Local: GregorandCryptography","url":"c:\\CodeForces\\GregorandCryptography.cpp","tests":[{"id":1722254136128,"input":"2\n17\n5\n","output":"3 5\n2 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\GregorandCryptography.cpp","group":"local","local":true}
