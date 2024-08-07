@@ -1,0 +1,1 @@
+{"name":"Local: IsItACat","url":"c:\\CodeForces\\IsItACat.cpp","tests":[{"id":1722256882161,"input":"7\n4\nmeOw\n14\nmMmeoOoWWWwwwW\n3\nmew\n7\nMmeEeUw\n4\nMEOW\n6\nMmyaVW\n5\nmeowA\n","output":"YES\nYES\nNO\nNO\nYES\nNO\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CodeForces\\IsItACat.cpp","group":"local","local":true}
